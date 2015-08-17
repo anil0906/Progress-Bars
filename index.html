@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+<title>Progress Bars</title>
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+    
+<body class="container">
+<header>
+    <h1> Progress Bars </h1>
+</header>
+<div id="progressContainer"></div>
+
+     <select class="form-control">
+      <option value="1">First</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+  </select>
+  
+<div class="row buttonContainer">
+<button class="btn btn-primary col-md-3 col-lg-3 col-xs-6 col-sm-6" type="button" onclick="decrement(25)">-25</button>
+<button class="btn btn-primary col-md-3 col-lg-3 col-xs-6 col-sm-6" type="button" onclick="decrement(10)">-10</button>
+<button class="btn btn-primary col-md-3 col-lg-3 col-xs-6 col-sm-6" type="button" onclick="increment(10)">+10</button>
+<button class="btn btn-primary col-md-3 col-md-3 col-lg-3 col-xs-6" type="button" onclick="increment(25)">+25</button>
+</div>
+<script id="template" type='text/ractive'>
+
+    
+  <div class="progress">
+  <div class="progress-bar {{colorClass1}} progress-bar-striped {{activeClass1}}" role="progressbar" style="width : {{progress1}}%">
+  <span class="labelText"> {{progressLabel1}} </span>
+  </div>
+  </div> 
+  
+  
+  <div class="progress">
+  <div class="progress-bar {{colorClass2}} progress-bar-striped {{activeClass2}}" role="progressbar" style="width : {{progress2}}%">
+  <span class="labelText"> {{progressLabel2}} </span>
+  </div>
+  </div> 
+  
+  <div class="progress">
+  <div class="progress-bar {{colorClass3}} progress-bar-striped {{activeClass3}}" role="progressbar" style="width : {{progress3}}%">
+  <span class="labelText"> {{progressLabel3}} </span>
+  </div>
+  </div>
+
+ 
+</script>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+<script src="js/app/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@import url('https://bootswatch.com/superhero/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css');
+.buttonContainer {
+    padding-top: 20px;
+    margin-right: -2px;
+    margin-left: -3px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#progressContainer {
+    padding-top: 20px;
+}
+
+.progress {
+    min-height: 10px;
+    max-height: 30px;
+    height: 29px;
+    position: relative;
+}
+
+.labelText {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+}
